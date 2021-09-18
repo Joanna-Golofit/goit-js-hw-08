@@ -1,44 +1,6 @@
 # goit-js-hw-08
 
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Joanna-Golofit 
-goitacademy
-/
-javascript-homework
-Public
-9
-751.1k
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-You’re making changes in a project you don’t have write access to. We’ve created a fork of this project for you to commit your proposed changes to. Submitting a change will write it to a new branch in your fork, so you can send a pull request.
-javascript-homework
-/
-v2
-/
-08
-/
-README.pl.md
-in
-goitacademy:main
- 
 
-Spaces
-
-2
-
-Soft wrap
 1
 **Read in other languages: [Русский](README.md), [Українська](README.ua.md),
 2
