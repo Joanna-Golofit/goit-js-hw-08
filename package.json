@@ -1,7 +1,7 @@
 {
   "name": "parcel-project-template",
   "version": "1.1.0",
-  "description": "",
+  "description": "## Скрытые файлы",
   "main": "index.js",
   "homepage": "https://github.com/Joanna-Golofit/goit-js-hw-08",
   "scripts": {
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joanna-Golofit/goit-js-hw-08"
+    "url": "git+https://github.com/Joanna-Golofit/goit-js-hw-08.git"
   },
   "keywords": [],
-  "author": "Joanna Gołofit  <sunderlajsa@gmail.com>",
+  "author": "Joanna Gołofit <sunderlajsa@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Joanna-Golofit/goit-js-hw-08/issues"
@@ -26,6 +26,8 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "@vimeo/player": "^2.16.1",
+    "lodash.throttle": "^4.1.1",
     "simplelightbox": "^2.8.1"
   }
 }
