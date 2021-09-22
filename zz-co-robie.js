@@ -2,6 +2,11 @@ za kazdym razem zeby sie https pokazalo trzeba
 npm run dev
   ?
   
+  zad 3
+
+
+  
+
 
   skad wiedziec jak importy maja wygladac ? co konkretnie importowac ? i jak ?
   w https ://github.com/vimeo/player.js/blob/master/src/player.js
