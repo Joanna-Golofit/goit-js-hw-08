@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 var e=require("lodash.throttle");const t=document.querySelector(".feedback-form"),a="feedback-form-state";function o(e){const o={email:t.elements.email.value,message:t.elements.message.value},l=JSON.stringify(o);localStorage.setItem(a,l),console.log("3 json from storage",localStorage.getItem(a))}function l(){console.log("wraca JSON.parse",JSON.parse(localStorage.getItem(a))),t.elements.email.value=JSON.parse(localStorage.getItem(a)).email||"",t.elements.message.value=JSON.parse(localStorage.getItem(a)).message||""}function r(e){e.preventDefault(),console.log("JSON from localStorage",localStorage.getItem(a)),console.log("Parsed JSON from localStorage",JSON.parse(localStorage.getItem(a))),localStorage.removeItem(a),t.reset()}l(),t.addEventListener("input",e(o,500)),t.addEventListener("submit",r);
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/goit-js-hw-08/03-feedback.7ecbe3e4.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.8be30598.js.map
