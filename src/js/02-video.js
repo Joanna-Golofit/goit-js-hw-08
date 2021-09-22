@@ -23,7 +23,7 @@ player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
 // // throttle
 // document.addEventListener(
 //   'scroll',
-//   _.throttle(() => {
+//   _.throttle((e) => {
 //     console.log('Scroll handler call every 300ms');
 //   }, 300),
 // );

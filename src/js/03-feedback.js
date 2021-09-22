@@ -12,24 +12,26 @@ const dataJSON = JSON.stringify(data);
 
 
 
-//=======================moje dziala========================================================
+//=======================moje dziala troche ========================================================
 //na dzien dobry sprawdzanie czy nie ma danych zapisanych w localStorage:
 updateForm();
 
 //na kazda zmiane w polach formularza zapisujemy dane w local storage:
-form.addEventListener('input', saveEmailAndMessage);
+// form.addEventListener('input', saveEmailAndMessage);
+//co 2s na zmiane w polach formularza zapisujemy dane w local storage:
+form.addEventListener('input', throttle(saveEmailAndMessage,2000));
 
 function saveEmailAndMessage(evt) {
   //zapisanie danych w localStorage:
   localStorage.setItem('email.value', form.elements.email.value);
   localStorage.setItem('message.value', form.elements.message.value);
 
-  localStorage.setItem('feedback-form-state', dataJSON);
+  localStorage.setItem(LOCALSTORAGE_KEY, dataJSON);
 
   // localStorage.setItem(LOCALSTORAGE_KEY, dataJSON);
   console.log("1 data", data);
   console.log("2 dataJSON", dataJSON);
-  console.log("3 json", localStorage.getItem(LOCALSTORAGE_KEY));
+  console.log("3 json from storage", localStorage.getItem(LOCALSTORAGE_KEY));
   console.log("===========");
   updateForm();
   // form.reset();
@@ -49,17 +51,25 @@ function onSubmit(evt) {
   //wyprowadzanie danych do wiersza polecen:
   console.log(localStorage.getItem('email.value'));
   console.log(localStorage.getItem('message.value'));
-  //czyszczenie local storage(poki co jeszcze nie obiektu):
-  localStorage.setItem('email.value', "");
-  localStorage.setItem('message.value', "");
+  //czyszczenie local storage(rowniez obiektu):
+  localStorage.removeItem('email.value');
+  localStorage.removeItem('message.value');
+  localStorage.removeItem(LOCALSTORAGE_KEY);
   //resetowanie formularza:
   form.reset();
 }
 
-//===============================================================================
 
 //===============================================================================
 // const savedFeedback = localStorage.getItem(LOCALSTORAGE_KEY);
 // const parsedFeedback = JSON.parse(savedFeedback);
 // console.log(parsedFeedback); // Feedback object
-//===============================================================================
+//===================throttle============================================================
+// // 
+// document.addEventListener(
+  //   'scroll',
+  //   _.throttle((e) => {
+    //     console.log('Scroll handler call every 300ms');
+    //   }, 300),
+    // );
+    //===============================================================================
