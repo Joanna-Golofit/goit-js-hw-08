@@ -20,8 +20,7 @@ function saveEmailAndMessage(evt) {
   //zapisanie danych w localStorage:
   localStorage.setItem(LOCALSTORAGE_KEY, dataJSON);
   
-  console.log("JSON saved in storage", localStorage.getItem(LOCALSTORAGE_KEY));
-
+  // console.log("JSON saved in storage", localStorage.getItem(LOCALSTORAGE_KEY));
   // updateForm();
   // form.reset();
 }
@@ -30,10 +29,7 @@ function updateForm() {
   if (localStorage.getItem(LOCALSTORAGE_KEY) === null) {
     return;
   } else {
-    console.log(
-      'wraca JSON.parse',
-      JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)),
-    );
+    // console.log('wraca JSON.parse', JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
 
   form.elements.email.value = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)).email || '';
   form.elements.message.value = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)).message || '';  
@@ -46,7 +42,7 @@ function onSubmit(evt) {
   //nie przeladuje strony z formularzem po kliknieciu submit:
   evt.preventDefault();
   //wyprowadzanie danych do wiersza polecen:
-  console.log('JSON from localStorage', localStorage.getItem(LOCALSTORAGE_KEY));
+  // console.log('JSON from localStorage', localStorage.getItem(LOCALSTORAGE_KEY));
   console.log('Parsed JSON from localStorage', JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
   //czyszczenie local storage:
   localStorage.removeItem(LOCALSTORAGE_KEY);
