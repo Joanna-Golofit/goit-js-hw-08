@@ -15,22 +15,29 @@ function saveEmailAndMessage(evt) {
     email: form.elements.email.value,
     message: form.elements.message.value,
   };
-  //zmienic w JSON:
+  //zmienic w JSONa:
   const dataJSON = JSON.stringify(data);
   //zapisanie danych w localStorage:
   localStorage.setItem(LOCALSTORAGE_KEY, dataJSON);
   
-  console.log("3 json from storage", localStorage.getItem(LOCALSTORAGE_KEY));
+  console.log("JSON saved in storage", localStorage.getItem(LOCALSTORAGE_KEY));
 
   // updateForm();
   // form.reset();
 }
 
 function updateForm() {
-  console.log('wraca JSON.parse', JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
+  if (localStorage.getItem(LOCALSTORAGE_KEY) === null) {
+    return;
+  } else {
+    console.log(
+      'wraca JSON.parse',
+      JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)),
+    );
 
   form.elements.email.value = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)).email || '';
   form.elements.message.value = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)).message || '';  
+  }
 }
 
 form.addEventListener('submit', onSubmit);
