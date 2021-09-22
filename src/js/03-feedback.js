@@ -43,7 +43,11 @@ function onSubmit(evt) {
   evt.preventDefault();
   //wyprowadzanie danych do wiersza polecen:
   // console.log('JSON from localStorage', localStorage.getItem(LOCALSTORAGE_KEY));
-  console.log('Parsed JSON from localStorage', JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
+  console.log(
+    '%cParsed JSON from localStorage',
+    'color: pink; font-weight: bold',
+    JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)),
+  );
   //czyszczenie local storage:
   localStorage.removeItem(LOCALSTORAGE_KEY);
   //resetowanie formularza:
