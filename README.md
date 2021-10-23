@@ -2,9 +2,9 @@
 
 
 ## General info
-SimpleLightbox library
-Video Player
-feedbackform
+:star: SimpleLightbox library
+:star: Video Player
+:star: feedbackform
 
 ## Technologies
 
@@ -16,7 +16,7 @@ feedbackform
 
 - SimpleLightbox library (npm - import/export)
 
-- Vimeo player API [https://github.com/vimeo/player.js/#vimeo-player-api]
+- [Vimeo player API](https://github.com/vimeo/player.js/#vimeo-player-api)
 
 - lodash.throttle
 
@@ -25,4 +25,4 @@ feedbackform
  
 ### Criteria
 
-https://github.com/goitacademy/javascript-homework/blob/main/v2/08/README.pl.md
+[link](https://github.com/goitacademy/javascript-homework/blob/main/v2/08/README.pl.md)
