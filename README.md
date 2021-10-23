@@ -3,7 +3,9 @@
 
 ## General info
 :star: SimpleLightbox library
+
 :star: Video Player
+
 :star: feedbackform
 
 ## Technologies
