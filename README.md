@@ -2,7 +2,7 @@
 
 
 ## General info
-:star: SimpleLightbox library
+:star: SimpleLightbox gallery
 
 :star: Video Player
 
